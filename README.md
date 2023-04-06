@@ -9,7 +9,7 @@ Do not know how to test it out and make end-to-end time measurements
 
 ### Description of codes
 
-1. exp_generator.py -> Shared by Ethan Nguyen
+1. exp_generator.py -> Shared by Ethan Nguyen in the Slack
 2. Zookeeper.py -> exemplar code to connect with discovery service
 3. Zk.py -> some additional codes for pub/sub topic-based model 
 4. Wrapped with handle_exception for all functions
