@@ -14,4 +14,12 @@ Do not know how to test it out and make end-to-end time measurements
 3. Zk.py -> some additional codes for pub/sub topic-based model 
 4. Wrapped with handle_exception for all functions
 5. Updated DiscoveryAppln and BrokerAppln -> does not use isready anymore
-6. New functions for PublisherAppln, PublisherMW, SubscriberAppln, SubscriberMW, DiscoveryAppln, DiscoveryMW, BrokerAppln, BrokerMW
+6. New functions for PublisherMW, SubscriberAppln, SubscriberMW, DiscoveryAppln, DiscoveryMW, BrokerAppln, BrokerMW
+
+For PublisherMW -> register, setRequest
+For SubscriberAppln ->
+For SubscriberMW ->
+For DiscoveryAppln ->
+For DiscoveryMW ->
+For BrokerAppln ->
+For BrokerMW ->
