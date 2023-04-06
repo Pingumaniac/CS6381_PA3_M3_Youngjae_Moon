@@ -190,35 +190,18 @@ class SubscriberAppln():
     topicSelector = TopicSelector()
     self.topiclist = topicSelector.interest(self.num_topics)  # let topic selector give us the desired num of topics
     
-  
-
-    def receiveDataByTopic(self, data):
-
-        try:
-
-            self.logger.info(
-
-                "SubscriberAppln::receiveDataByTopic - Receive Data started")
-
-            for pub in data.matched_pubs:
-
-                if self.dissemination == "Broker":
-
-                    pub.port = 5578
-
-                    self.mw_obj.subscribe(pub, self.topiclist)
-
-                else:
-
-                    self.mw_obj.subscribe(pub, self.topiclist)
-
-            self.state = self.State.RECEIVE_DATA
-
-            return 0
-
-        except Exception as e:
-
-            raise e
+  @handle_exception
+  def receiveDataByTopic(self, data):
+    self.logger.info("SubscriberAppln::receiveDataByTopic - Receive Data started")
+    for pub in data.matched_pubs:
+      if self.dissemination == "Broker":
+        pub.port = 5578
+        self.mw_obj.subscribe(pub, self.topiclist)
+      else:
+        self.mw_obj.subscribe(pub, self.topiclist)
+        self.state = self.State.RECEIVE
+        return 0
+   
   # New code for PA3
   @handle_exception
   def setPublishersInfo(self, publist):
