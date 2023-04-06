@@ -21,3 +21,4 @@ Do not know how to test it out and make end-to-end time measurements
 10. New functions for DiscoveryMW -> assureQuorum, createLeader, watchLeader, watchBroker, waitBroker, sendStateReplica
 11. New functions for BrokerAppln -> setSubscription
 12. New functions for BrokerMW -> setRequest, setWatch, brokerLeader, subscribe
+13. Added comments for descriptions for these functions for each file.
