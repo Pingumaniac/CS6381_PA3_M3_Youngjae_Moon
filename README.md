@@ -1,11 +1,15 @@
 # CS6381_PA3_M3_Youngjae_Moon
 PA3 Milestone3 Youngjae Moon
 
-### What I have done
+### What I have done and not done
 Milestone 1 & 2 bascially almost done
 
 For Milestone 3,
-Do not know how to test it out and make end-to-end time measurements 
+Do not know how to test it out and make end-to-end time measurements. Having troubles with utilising exp_generator.py
+
+python3 exp_generator.py -P 2 -S 2 -B 2 -D 2
+
+don't know how to analyze the result from the terminal
 
 ### Description of codes
 
